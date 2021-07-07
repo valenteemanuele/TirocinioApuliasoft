@@ -3,7 +3,7 @@ function loadUsers(userIds, load, done) {
 
     userIds.forEach(function(id, index){
         load(id,function(user){
-            users[index]=user;
+            users[index] = user;
             return done(users)
         })
     })

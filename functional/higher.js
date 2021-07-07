@@ -4,9 +4,9 @@ function operation(){
 }
 
 function repeat(prova, num){
-    if(num<=0) return;
+    if(num <= 0) return;
     operation()
-    return repeat(operation,--num)
+    return repeat(operation, --num)
 }
 
 
