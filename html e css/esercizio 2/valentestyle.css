@@ -1,0 +1,253 @@
+/*PRIMA NAVBAR DEI CONTATTI (NERA) */
+.navbar-contact{
+    background-color: black;
+    display: flex;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+body{
+    margin: 0;
+    background-color: #4e906b;
+
+}
+
+/*SEZIONE CONTATTI SOCIAL*/
+#contactus {
+    justify-content: flex-start;
+    color: white;
+    margin-left: 20px;
+}
+
+/*SEZIONE CONTATTI EMAIL NUMERO TELEFONO*/
+#contactus-right{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    margin-right: 20px;
+
+}
+
+/*AGGIUNTA SEPARATORE ELEMENTI NAVBAR CONTATTI*/
+#contactus-right p:first-child::after{
+    margin-left: 15px;
+    margin-right: 15px;
+    content: " | ";
+}
+
+ /*ICONE SOCIAL*/
+ .style-icon-top{
+    margin-right: 10px;
+    color: white;
+}
+
+
+/*CONTENITORE HEADER */
+.header{
+    background-color: #4e906b;
+    display: flex;
+    justify-content: space-between;
+    height: 92px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/*CONTAINER DEL LOGO*/
+.logo-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*TESTO LOGO*/
+.company-text{
+    font-family: 'Verdana';    
+    color: white;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/*CONTAINER IMMAGINE PRINCIPALE BODY*/
+.carosel{
+    height: 300px;
+    background-image: url("carosel.jpg");
+    height: 500px;
+    display: flex;
+flex-direction: column;
+}
+
+/*TESTO SU IMMAGINE PRINCIPALE BODY*/
+#text-carosel{
+margin-top:100px;
+margin-left:30px;}
+
+/*PRIMA FRASE*/
+.carosel-text-1{
+    
+    font-family: 'Verdana';    
+
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 50px;
+    
+}
+
+/*SECONDA FRASE*/
+.carosel-text-2{
+    font-family: 'Verdana';    
+    
+
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 72px;
+    margin-top:-40px;
+    
+}
+
+/*BOTTONE SU IMMAGINE BODY*/
+#btn{
+    border-radius: 20px;
+        margin-left: 30px;
+        font-size: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+        border: none;
+
+}
+
+
+
+/*CONTAINER MENU*/
+.menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    
+}
+
+
+/*TESTO MENU*/
+.menu li a {
+    margin: 10px;
+    font-weight: 700;
+    text-decoration: none;
+color:white;
+font-size:x-large;
+letter-spacing: 2px;
+}
+
+/*EFFETTO UNDERLINE ELEMENTI MENU*/
+.menu li a:hover,
+.menu li a:focus,
+.menu li a:active {
+    border-bottom: 1px solid white;
+}
+
+
+@media (min-width: 800px) {
+    
+
+/*CONTAINER CARD BODY*/
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -100px;
+}
+}
+
+
+/* CARD BODY*/
+.card {
+    margin:15px;
+    background-color:#363636;
+    text-align: center;
+    width: 300px;
+    height: 100%;
+    box-shadow: 10px 10px;
+ }
+
+ /*TITOLO CARD*/
+ .text-logo-card{
+     padding-top: 15px;
+     color: #b0d745;
+     text-align: center;
+     font-weight: 500;
+ }
+
+ /*ICONE CARD*/
+ .style-icon{
+     margin-top: 20px;
+     color: white;
+     font-size: 50px;
+ }
+
+
+#contactus p i:first-child::before{
+    margin-left:10px;
+}
+
+
+/*TESTO NELLE CARD*/
+ .text-body-card{
+     text-align: center;
+     color: white;
+     padding-left: 30px;
+     padding-right: 30px;
+     padding-bottom: 20px;
+
+ }
+
+/*RESPONSIVE */
+ @media (max-width: 800px) {
+    .navbar-contact{
+        display:none;
+    }
+    .carosel-text-1{
+    
+        font-family: 'Verdana';    
+    
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 50px;
+        
+    }
+    .carosel-text-2{
+        font-family: 'Verdana';    
+        
+    
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 10vw;
+        margin-top:-40px;
+        
+    }
+    
+    .header{
+        background-color: #4e906b;
+        display: block;
+        padding-right: 30px;
+        padding-left: 30px;
+        height: 100%;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding:0;
+    }
+    
+    .card-container {
+      flex-direction: column;
+      align-self: center;
+      display:flex;
+      align-items: center;
+
+     
+    }
+  }
