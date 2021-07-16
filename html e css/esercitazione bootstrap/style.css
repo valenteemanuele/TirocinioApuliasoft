@@ -1,0 +1,74 @@
+.headerbar{
+
+    background-color: #b5b3b3;
+
+}
+/* ELENCO MENU*/
+.nav-item a{
+  color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+.navbar-brand {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+#contactus-right{
+
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+
+}
+
+#contactus {
+    display: flex;
+    color: white;
+}
+
+.navbar-text {
+    
+    margin-right: 1vw;
+}
+
+
+
+/*CONTAINER MENU FOOTER*/
+.footer-menu{
+    display: flex;
+    justify-content: center;
+
+} 
+
+/*ELENCO FOOTER*/
+ .footer-menu li {
+    justify-content: center;
+     text-transform: uppercase;
+     font-weight: 700;
+     list-style-type: none;
+ }
+
+
+ /*TESTO FOOTER*/
+ .footer-menu li a {
+    text-decoration: none;
+color: black;
+ }
+
+
+ /*PSEUDO CLASSE PER AGGIUNTA | FRA LE VOCI DEL MENU*/
+ .footer-menu li:nth-child(n+0) a::after{
+     content: "|";
+     margin: 15px
+
+ }
+
+
+ .footer-menu li:last-child a::after{
+    content: "";
+    margin: 15px
+ }
